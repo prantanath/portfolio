@@ -14,7 +14,7 @@ export class AboutComponent {
 
   downloadCV(){
     const link = document.createElement('a');
-    link.href = 'pranta_cv.pdf';
+    link.href = './pranta_cv.pdf';
     link.download = 'Pranta_Nath_Nayan_CV.pdf';
     link.click();
   }
