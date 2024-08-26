@@ -1,0 +1,35 @@
+<section id="projects" class="min-h-screen pt-20">
+  <div class="container mx-auto">
+    <div class="text-6xl font-bold text-center pb-32">
+      <span [class]="gradientColorClass">Projects</span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 text-white">
+      <div *ngFor="let project of projectsList"
+           class="bg-gradient-to-r from-gray-900 via-gray-700 to-[#101010] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105 flex flex-col h-full">
+        <div class="text-2xl font-bold truncate">{{ project.title }}</div>
+
+        <p class="text-sm font-bold mt-2 bg-yellow-500 text-gray-900 px-2 py-1 rounded">
+          Technologies: {{ project.technologies.join(', ') }}
+        </p>
+
+        <p class="mt-2">{{ project.description }}</p>
+
+        <div class="mt-auto flex font-bold">
+          <div>
+
+            <a [href]="project.link" target="_blank" class="text-blue-500 hover:underline
+          hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-yellow-600 mt-4 inline-block">View
+              Project</a>
+          </div>
+          <div class="flex flex-auto"></div>
+          <div>
+            <a [href]="project.live" target="_blank" [ngClass]="{
+            'text-blue-500 hover:underline hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-yellow-600 mt-4 inline-block':true,
+            'pointer-events-none' : !project.live
+            }">Live View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

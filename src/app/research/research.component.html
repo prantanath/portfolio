@@ -1,0 +1,34 @@
+<section id="research" class="min-h-screen pt-20 pb-32">
+  <div class="container mx-auto text-white">
+    <!-- Research Interests Section -->
+    <div class="text-6xl font-bold text-center pb-16">
+      <span [class]="gradientColorClass">Research</span>
+    </div>
+    <div class="text-xl font-semibold text-center pb-8">
+      <h3 class="text-4xl font-bold mb-4">Research Interests</h3>
+      <div class="flex flex-wrap items-center justify-center">
+        <div *ngFor="let interest of researchInterests;let i = index;let isLast = last" class="mb-2 flex items-center">
+          <div class="px-3">{{ interest }}</div>
+          <div *ngIf="!(len-2 === i) && !isLast" class="h-[14px] w-[14px] rounded-full bg-pink-700"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Publications Section -->
+    <div class="text-xl font-semibold text-center">
+      <h3 class="text-4xl font-bold mb-4">Publications</h3>
+      <div class="mx-auto text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+        <div *ngFor="let publication of publicationsList"
+             class="bg-gradient-to-r from-gray-800 via-gray-900 to-[#101010] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105 flex flex-col h-full">
+          <h4 class="text-2xl font-bold line-clamp-2">{{ publication.title }}</h4>
+          <p class="mt-2 text-gray-500 truncate">{{ publication.authors }}</p>
+          <p class="mt-1 italic">{{ publication.journal }}, {{ publication.year }}</p>
+          <div class="flex-grow"></div>
+          <div class="mt-4">
+            <a [href]="publication.link" target="_blank" class="text-blue-500 hover:underline hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-yellow-600">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
