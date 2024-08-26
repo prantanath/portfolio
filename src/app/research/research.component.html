@@ -13,12 +13,8 @@
         >
           <div class="px-3 text-center">{{ interest }}</div>
           <div
-            *ngIf="!(len - 2 === i) && !isLast"
-            class="h-[14px] w-[14px] rounded-full bg-pink-700"
-          ></div>
-          <div
-            *ngIf="(len - 2 === i)"
-            class="h-[14px] w-[14px] rounded-full bg-pink-700 lg:hidden"
+            *ngIf="!isLast"
+            class="h-[14px] w-[14px] rounded-full bg-pink-700 xl:h-[12px] xl:w-[12px]"
           ></div>
         </div>
       </div>
