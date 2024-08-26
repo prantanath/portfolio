@@ -1,12 +1,12 @@
 <section id="about" class="min-h-screen flex items-center justify-center">
   <div class="text-white">
-    <div class="grid grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
       <div class="px-8">
-        <div class="pb-2.5 text-4xl font-bold text-right">Hi, It's <span [class]="gradientColorClass">Pranta</span>
+        <div class="pb-2.5 text-4xl font-bold text-center md:text-right lg:text-right">Hi, It's <span [class]="gradientColorClass">Pranta</span>
         </div>
-        <div class="pb-2.5 text-xl font-bold text-right">I'm a <span [class]="gradientColorClass">Developer, Researcher, and Learner</span>
+        <div class="pb-2.5 text-xl font-bold text-center md:text-right lg:text-right">I'm a <span [class]="gradientColorClass">Developer, Researcher, and Learner</span>
         </div>
-        <div class="flex flex-col justify-between text-right">
+        <div class="flex flex-col justify-between text-center md:text-right lg:text-right">
 
           <div class="mb-1">
             {{ about_one }}
@@ -18,8 +18,8 @@
             {{ about_three }}
           </div>
         </div>
-        <div class="pt-2.5 text-right text-4xl flex items-center justify-end space-x-8">
-          <div (click)="downloadCV()" class="bg-blue-700 h-8 w-auto text-sm flex items-center rounded px-2 cursor-pointer
+        <div class="pt-2.5 text-3xl flex items-center justify-center space-x-8 text-center md:justify-end md:space-x-4 lg:text-right lg:justify-end lg:text-4xl">
+          <div (click)="downloadCV()" class="bg-blue-700 h-9 w-auto text-sm flex items-center rounded px-2 cursor-pointer md:h-8 lg:h-8
         transition-transform duration-300 ease-in-out hover:bg-black hover:shadow-[0_0_25px_rgba(236,72,153,1),_0_0_50px_rgba(236,72,153,1)]">
             Download CV
           </div>

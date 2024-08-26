@@ -1,7 +1,18 @@
 <header class="sticky top-0 backdrop-blur-md text-white p-4 z-50 bg-black/25">
   <nav class="container mx-auto flex justify-between items-center">
     <a href="#" class="text-3xl font-satisfy font-bold">Pranta <span [class]="gradientColorClass">Nath</span></a>
-    <ul class="flex space-x-4 font-semibold">
+
+    <!-- Hamburger Button for Small Screens -->
+    <button class="block md:hidden focus:outline-none" (click)="isMenuOpen = !isMenuOpen">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+
+    <ul
+      [ngClass]="{'hidden': !isMenuOpen, 'flex': isMenuOpen}"
+      class="hidden md:flex space-y-4 md:space-y-0 md:space-x-4 font-semibold flex-col md:flex-row items-center md:items-center mt-4 md:mt-0"
+    >
       <li><a href="#about" class="transition-transform duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-fuchsia-600">About</a></li>
       <li><a href="#education" class="transition-transform duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-fuchsia-600">Education</a></li>
       <li><a href="#projects" class="transition-transform duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-fuchsia-600">Projects</a></li>
