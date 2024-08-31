@@ -34,7 +34,9 @@ export class ProjectsComponent {
     },
     {
       title: 'MUSIX',
-      description: 'A music player app',
+      description: 'Web app utilizing a public API to stream music. Implemented play and stop ' +
+        'buttons, handled user interactions for playback control, and integrated a ' +
+        'progress bar and timer to track song duration.',
       technologies: ['Angular', 'Tailwind CSS', 'TypeScript'],
       link: 'https://github.com/prantanath/musix',
       live: 'https://musix-200ea.web.app/',
