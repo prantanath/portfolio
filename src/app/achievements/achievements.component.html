@@ -1,10 +1,10 @@
 <!-- awards-achievements.component.html -->
 <section id="achievements" class="min-h-screen pt-20 pb-32">
   <div class="container mx-auto mt-4 text-white">
-    <div class="text-6xl font-bold text-center pb-16">
+    <div class="text-4xl md:text-6xl font-bold text-center pb-16">
       <span [class]="gradientColorClass">Awards and Achievements</span>
     </div>
-    <ul class="space-y-6 flex flex-col items-center justify-center">
+    <ul class="space-y-6 flex flex-col md:items-center">
       <li *ngFor="let achievement of achievementList"
           class="p-2 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105
           hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:bg-clip-text hover:text-transparent">
