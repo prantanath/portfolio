@@ -1,4 +1,4 @@
-<section id="research" class="min-h-screen pt-20 pb-32">
+<section id="research" class="min-h-screen pt-20">
   <div class="container mx-auto text-white mt-4">
     <!-- Research Interests Section -->
     <div class="text-4xl md:text-6xl font-bold text-center pb-16">
@@ -9,7 +9,7 @@
       <div class="flex flex-wrap md:block lg:flex lg:flex-wrap items-center justify-center">
         <div
           *ngFor="let interest of researchInterests; let i = index; let isLast = last"
-          class="mb-2 flex items-center justify-center flex-col md:flex-col lg:flex-row"
+          class="dark:text-black mb-2 flex items-center justify-center flex-col md:flex-col lg:flex-row"
         >
           <div class="px-3 text-center">{{ interest }}</div>
           <div
@@ -38,4 +38,11 @@
       </div>
     </div>
   </div>
+
+  <div class="flex flex-row-reverse">
+
+    <a class="border-0" href="https://www.freecounterstat.com" title="free web page counter html code"><img src="https://counter2.optistats.ovh/private/freecounterstat.php?c=4x96zhq48dzuu28a5n6dnkng7rmnagb6" title="free web page counter html code" alt="free web page counter html code"></a>
+  </div>
+
+
 </section>

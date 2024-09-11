@@ -18,8 +18,8 @@ export class ResearchComponent {
   researchInterests = [
     'Artificial Intelligence and Machine Learning',
     'Deep Learning',
-    'Natural Language Processing',
     'Software Engineering',
+    'Natural Language Processing',
     'Data Science and Big Data Analytics',
   ];
 
