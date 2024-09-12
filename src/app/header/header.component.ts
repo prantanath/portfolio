@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import {NgClass} from "@angular/common";
+import {DarkModeComponent} from "../dark-mode/dark-mode.component";
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
-    NgClass
+    NgClass,
+    DarkModeComponent
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

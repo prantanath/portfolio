@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .link{
+    @apply transition-transform duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-fuchsia-600;
+  }
+  .download{
+    @apply dark:text-white bg-blue-700 h-auto w-auto text-[11px] md:text-sm flex items-center rounded px-2 cursor-pointer md:h-8 lg:h-8
+    transition-transform duration-300 ease-in-out hover:bg-black hover:shadow-[0_0_25px_rgba(236,72,153,1),_0_0_50px_rgba(236,72,153,1)];
+  }
+  .socials{
+    @apply rounded-full bg-transparent transition-transform duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(236,72,153,1),_0_0_50px_rgba(236,72,153,1)];
+  }
+}

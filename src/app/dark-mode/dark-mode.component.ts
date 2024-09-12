@@ -12,7 +12,7 @@ import {NgIf} from "@angular/common";
   styleUrl: './dark-mode.component.css'
 })
 export class DarkModeComponent implements OnInit{
-  isDarkMode = false;
+  isDarkMode = true;
   themeService = inject(ThemeServiceService);
 
   ngOnInit() {
