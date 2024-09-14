@@ -18,9 +18,9 @@ export class AboutComponent {
     link.download = 'Pranta_Nath_Nayan_CV.pdf';
     link.click();
   }
-  about_one = "As a Developer, I create dynamic web applications using Angular and Django. I focus on building user-friendly interfaces that enhance engagement and functionality.";
+  about_one = "I am a Developer specializing in dynamic web applications with Angular and Django. I work on creating user centric interfaces that make it more engaging as well as functional.";
 
-  about_two = "As a Researcher, I delve into Software Engineering, Machine Learning, AI, and Deep Learning. I aim to advance these fields through innovative research and impactful solutions.";
+  about_two = "My Research takes me into fields like Machine Learning, AI,Software Engineering and Deep Learning. My research aims to push those fields forward and find real world applications.";
 
-  about_three = "As a Lifelong Learner, I am dedicated to continuous growth and staying updated with the latest advancements. Explore my portfolio and reach out for potential collaborations or discussions.";
+  about_three = "I am currently focused on Growth as a Lifelong Learner and trying to keep up with state-of-the-art. View my work and hit me up if you are down for collaboration/talks.";
 }
