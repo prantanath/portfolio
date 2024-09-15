@@ -26,7 +26,7 @@
 <!--    </ul>-->
 
     <div class="dropdown dropdown-end">
-      <div tabindex="0" role="button" class="btn md:hidden" (click)="toggleDropdown()">
+      <div tabindex="0" role="button" class="btn md:hidden bg-[#191e24]" (click)="toggleDropdown()">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
@@ -35,7 +35,7 @@
       <ul
         [ngClass]="{'hidden': !isMenuOpen, 'flex': isMenuOpen}"
         tabindex="0"
-        class="dropdown-content menu menu-sm bg-base-100 rounded-box z-[1] w-52 p-2 flex flex-col items-center gap-y-2"
+        class="dropdown-content menu menu-sm bg-[#191e24] rounded-box z-[1] w-52 p-2 flex flex-col items-center gap-y-2"
       >
         <li><a href="#about" class="link" (click)="closeDropdown()">About</a></li>
         <li><a href="#education" class="link" (click)="closeDropdown()">Education</a></li>
@@ -65,7 +65,27 @@
     </div>
 
 
+<!--    <div class="relative">-->
+<!--      <button class="block md:hidden focus:outline-none" (click)="toggleDropdown()">-->
+<!--        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>-->
+<!--        </svg>-->
+<!--      </button>-->
 
+<!--      <ul-->
+<!--        [ngClass]="{'hidden': !isMenuOpen, 'block': isMenuOpen}"-->
+<!--        class="absolute right-0 mt-2 w-48 md:bg-transparent dark:bg-gray-400 bg-base-100 shadow-lg rounded-lg py-2 dark:text-black md:static md:w-auto md:flex space-y-4 md:space-y-0 md:space-x-4 font-semibold flex flex-col md:flex-row items-center mt-4 md:mt-0 z-20"-->
+<!--      >-->
+<!--        <li><a href="#about" class="block link" (click)="closeDropdown()">About</a></li>-->
+<!--        <li><a href="#education" class="block link" (click)="closeDropdown()">Education</a></li>-->
+<!--        <li><a href="#achievements" class="block link" (click)="closeDropdown()">Achievements</a></li>-->
+<!--        <li><a href="#projects" class="block link" (click)="closeDropdown()">Projects</a></li>-->
+<!--        <li><a href="#research" class="block link" (click)="closeDropdown()">Research</a></li>-->
+<!--        <li>-->
+<!--          <app-dark-mode></app-dark-mode>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
 
   </nav>
 
