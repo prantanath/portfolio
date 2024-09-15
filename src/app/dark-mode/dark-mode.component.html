@@ -1,5 +1,5 @@
-<button (click)="toggleTheme()"
-        class="h-8 w-8 p-0.5 rounded-lg hover:bg-gray-700">
+<div (click)="toggleTheme()"
+        class="h-8 w-8 p-0.5 rounded-lg hover:bg-base-100 cursor-pointer">
 
   <!-- Light Mode Icon -->
   <svg *ngIf="!isDarkMode" class="fill-violet-700 block" fill="currentColor" viewBox="0 0 20 20">
@@ -16,5 +16,5 @@
     ></path>
   </svg>
 
-</button>
+</div>
 

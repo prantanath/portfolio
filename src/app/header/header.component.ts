@@ -15,4 +15,11 @@ import {DarkModeComponent} from "../dark-mode/dark-mode.component";
 export class HeaderComponent {
   gradientColorClass = "bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent";
   isMenuOpen = false;
+  toggleDropdown() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeDropdown() {
+    this.isMenuOpen = false;
+  }
 }

@@ -4,25 +4,70 @@
       [class]="gradientColorClass">Nath</span></a>
 
     <!-- Hamburger Button for Small Screens -->
-    <button class="block md:hidden focus:outline-none" (click)="isMenuOpen = !isMenuOpen">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-      </svg>
-    </button>
+<!--    <button class="block md:hidden focus:outline-none" (click)="isMenuOpen = !isMenuOpen">-->
+<!--      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">-->
+<!--        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>-->
+<!--      </svg>-->
+<!--    </button>-->
 
-    <ul
-      [ngClass]="{'hidden': !isMenuOpen, 'flex': isMenuOpen}"
-      class="dark:text-black hidden md:flex space-y-4 md:space-y-0 md:space-x-4 font-semibold flex-col md:flex-row items-center mt-4 md:mt-0"
-    >
-      <li><a href="#about" class="link">About</a></li>
-      <li><a href="#education" class="link">Education</a></li>
-      <li><a href="#skills" class="link">Skills</a></li>
-      <li><a href="#achievements" class="link">Achievements</a></li>
-      <li><a href="#projects" class="link">Projects</a></li>
-      <li><a href="#research" class="link">Research</a></li>
-      <li class="pl-4">
-        <app-dark-mode/>
-      </li>
-    </ul>
+<!--    <ul-->
+<!--      [ngClass]="{'hidden': !isMenuOpen, 'flex': isMenuOpen}"-->
+<!--      class="dark:text-black hidden md:flex space-y-4 md:space-y-0 md:space-x-4 font-semibold flex-col md:flex-row items-center mt-4 md:mt-0"-->
+<!--    >-->
+<!--      <li><a href="#about" class="link">About</a></li>-->
+<!--      <li><a href="#education" class="link">Education</a></li>-->
+<!--      <li><a href="#skills" class="link">Skills</a></li>-->
+<!--      <li><a href="#achievements" class="link">Achievements</a></li>-->
+<!--      <li><a href="#projects" class="link">Projects</a></li>-->
+<!--      <li><a href="#research" class="link">Research</a></li>-->
+<!--      <li class="pl-4">-->
+<!--        <app-dark-mode/>-->
+<!--      </li>-->
+<!--    </ul>-->
+
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn md:hidden" (click)="toggleDropdown()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </div>
+
+      <ul
+        [ngClass]="{'hidden': !isMenuOpen, 'flex': isMenuOpen}"
+        tabindex="0"
+        class="dropdown-content menu menu-sm bg-base-100 rounded-box z-[1] w-52 p-2 flex flex-col items-center gap-y-2"
+      >
+        <li><a href="#about" class="link" (click)="closeDropdown()">About</a></li>
+        <li><a href="#education" class="link" (click)="closeDropdown()">Education</a></li>
+        <li><a href="#skills" class="link" (click)="closeDropdown()">Skills</a></li>
+        <li><a href="#achievements" class="link" (click)="closeDropdown()">Achievements</a></li>
+        <li><a href="#projects" class="link" (click)="closeDropdown()">Projects</a></li>
+        <li><a href="#research" class="link" (click)="closeDropdown()">Research</a></li>
+        <div>
+          <app-dark-mode></app-dark-mode>
+        </div>
+      </ul>
+    </div>
+    <div class="hidden md:flex">
+      <ul
+        class="dark:text-black hidden md:flex space-y-4 md:space-y-0 md:space-x-4 font-semibold md:flex-row items-center mt-4 md:mt-0"
+      >
+        <li><a href="#about" class="link">About</a></li>
+        <li><a href="#education" class="link">Education</a></li>
+        <li><a href="#skills" class="link">Skills</a></li>
+        <li><a href="#achievements" class="link">Achievements</a></li>
+        <li><a href="#projects" class="link">Projects</a></li>
+        <li><a href="#research" class="link">Research</a></li>
+        <li class="pl-4 pb-2">
+          <app-dark-mode/>
+        </li>
+      </ul>
+    </div>
+
+
+
+
   </nav>
+
 </header>
+

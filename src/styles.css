@@ -5,7 +5,7 @@
 
 @layer components {
   .link{
-    @apply transition-transform duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-fuchsia-600;
+    @apply no-underline transition-transform duration-300 ease-in-out hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent hover:border-b-2 border-fuchsia-600;
   }
   .download{
     @apply dark:text-white bg-blue-700 h-auto w-auto text-[11px] md:text-sm flex items-center rounded px-2 cursor-pointer md:h-8 lg:h-8
