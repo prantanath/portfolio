@@ -1,0 +1,11 @@
+.custom-heading {
+  @apply text-xl md:text-2xl font-bold text-white mb-4 dark:text-black;
+}
+
+.custom-card{
+  @apply p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105 dark:shadow;
+}
+
+.custom-tag{
+  @apply flex items-center gap-2 bg-gray-800 text-gray-300 text-sm px-3 py-1 rounded-lg dark:bg-gray-300 dark:text-gray-900;
+}

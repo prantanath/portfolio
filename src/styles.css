@@ -15,3 +15,44 @@
     @apply rounded-full bg-transparent transition-transform duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(236,72,153,1),_0_0_50px_rgba(236,72,153,1)];
   }
 }
+
+
+@layer utilities {
+  .animate-typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right; /* Keep text right-aligned */
+    animation: typing 3s steps(10) infinite alternate;
+    max-width: 0; /* Start with no width */
+  }
+
+  @keyframes typing {
+    from {
+      max-width: 0;
+    }
+    to {
+      max-width: 100%;
+    }
+  }
+
+  .cursor {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: bottom; /* Align with the bottom of the text */
+    animation: blink 0.8s infinite;
+    position: relative;
+    top: -14px;
+    color: currentColor;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+}
