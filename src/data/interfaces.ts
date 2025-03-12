@@ -5,3 +5,11 @@ export interface publication{
   year:number;
   link:string;
 }
+
+export interface project{
+  title:string,
+  description:string,
+  technologies:string[],
+  link:string,
+  live:string,
+}
