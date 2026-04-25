@@ -28,6 +28,7 @@ export class CursorTrailComponent implements OnInit, OnDestroy {
   private readonly NEON_COLOR = '#ff0080'; // hot pink
 
   ngOnInit() {
+    if (window.matchMedia('(pointer: coarse)').matches) return;
     this.canvas = document.getElementById('trail-canvas') as HTMLCanvasElement;
     this.ctx    = this.canvas.getContext('2d')!;
     this.resize();

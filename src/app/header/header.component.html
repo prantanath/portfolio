@@ -27,14 +27,14 @@
       </ul>
     </div>
     <div class="hidden md:flex">
-      <ul class="hidden md:flex space-y-0 md:space-x-1 font-semibold md:flex-row items-center mt-4 md:mt-0">
+      <ul class="hidden md:flex md:space-x-1 font-semibold md:flex-row items-center md:mt-0">
 
-        <li *ngFor="let item of ['about','education','skills','achievements','projects','research']">
+        <li class="mt-1.5" *ngFor="let item of ['about','education','skills','achievements','projects','research']">
           <a [href]="'#' + item"
              class="relative px-4 py-2 rounded-lg text-sm
               dark:text-gray-600 text-white/70
-             transition-all duration-200 capitalize
-              group overflow-hidden inline-block">
+              transition-all duration-200 capitalize
+              group overflow-hidden inline-flex items-center">
 
             <!-- animated underline -->
             <span class="absolute bottom-1 left-4 right-4 h-[1.5px] rounded-full
@@ -48,7 +48,7 @@
         </li>
 
         <!-- dark mode toggle -->
-        <li class="pl-3">
+        <li class="pl-3 flex items-center">
           <app-dark-mode/>
         </li>
 
