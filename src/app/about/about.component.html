@@ -1,7 +1,7 @@
 <section id="about" class="min-h-screen flex items-center justify-center">
   <div class="text-white dark:text-black">
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 ">
-      <div class="px-10">
+      <div class="px-16">
         <div class="pb-2.5 pt-2 text-4xl font-bold text-center md:text-right lg:text-right">
           <span class="animate-typing">
             Hi, It's <span [class]="gradientColorClass">Pranta</span>
@@ -24,30 +24,85 @@
             {{ about_three }}
           </div>
         </div>
-        <div
-          class="pt-2.5 text-2xl md:text-3xl flex items-center justify-center space-x-8 text-center md:justify-end md:space-x-4 lg:text-right lg:justify-end lg:text-4xl">
-          <div (click)="downloadCV()" class="download">
-            Download&nbsp;CV
-          </div>
+        <div class="pt-2.5 flex items-center justify-center md:justify-end space-x-3">
 
-          <a href="https://linkedin.com/in/pranta-nath-nayan"
-             class="socials hover:bg-gray-100 hover:text-blue-500">
-            <i class='bx bxl-linkedin border-black'></i>
+          <!-- Download CV -->
+          <button (click)="downloadCV()"
+                  class="bg-blue-600 relative flex items-center gap-2 px-4 py-2 rounded-lg
+                 border dark:border-gray-300 border-white/15
+                 dark:bg-blue-600 bg-white/5
+                 text-white/80
+                 text-[12px] md:text-[13px] font-semibold font-mono tracking-wide
+                 transition-all duration-300
+                 dark:hover:border-yellow-500 hover:border-yellow-400/50
+                 dark:hover:text-yellow-600 hover:text-yellow-400
+                 dark:hover:bg-yellow-50 hover:bg-yellow-400/10
+                 hover:shadow-[0_0_20px_rgba(246,211,101,0.3)]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/>
+            </svg>
+            Download CV
+          </button>
+
+          <!-- Divider -->
+          <div class="h-6 w-px dark:bg-gray-300 bg-white/10"></div>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/pranta-nath-nayan" target="_blank"
+             class="flex items-center justify-center w-9 h-9 rounded-lg
+            border dark:border-gray-300 border-white/10
+            dark:bg-gray-100 bg-white/5
+            dark:text-gray-600 text-white/60
+            transition-all duration-300
+            hover:border-[#0A66C2] hover:text-[#0A66C2]
+            hover:bg-[#0A66C2]/10
+            hover:shadow-[0_0_16px_rgba(10,102,194,0.35)]">
+            <i class='bx bxl-linkedin text-lg'></i>
           </a>
-          <a href="https://github.com/prantanath"
-             class="socials dark:hover:bg-transparent">
-            <i class='bx bxl-github border-black'></i>
+
+          <!-- GitHub -->
+          <a href="https://github.com/prantanath" target="_blank"
+             class="flex items-center justify-center w-9 h-9 rounded-lg
+            border dark:border-gray-300 border-white/10
+            dark:bg-gray-100 bg-white/5
+            dark:text-gray-600 text-white/60
+            transition-all duration-300
+            dark:hover:border-gray-800 hover:border-white/40
+            dark:hover:text-gray-900 hover:text-white
+            dark:hover:bg-gray-200 hover:bg-white/10
+            hover:shadow-[0_0_16px_rgba(0,0,0,0.15)]">
+            <i class='bx bxl-github text-lg'></i>
           </a>
+
+          <!-- Gmail -->
           <a href="mailto:prantanathnayan@gmail.com"
-             class="socials hover:bg-gray-100 hover:text-red-500">
-            <i class='bx bxl-gmail border-black'></i>
+             class="flex items-center justify-center w-9 h-9 rounded-lg
+            border dark:border-gray-300 border-white/10
+            dark:bg-gray-100 bg-white/5
+            dark:text-gray-600 text-white/60
+            transition-all duration-300
+            hover:border-[#EA4335] hover:text-[#EA4335]
+            hover:bg-[#EA4335]/10
+            hover:shadow-[0_0_16px_rgba(234,67,53,0.35)]">
+            <i class='bx bxl-gmail text-lg'></i>
           </a>
-          <a href="https://scholar.google.co.uk/citations?user=plKXDw8AAAAJ&hl=en"
-             class="socials hover:bg-gray-300 hover:text-blue-400">
-            <i class='bx bxs-graduation border-black'></i>
-          </a>
-        </div>
 
+          <!-- Google Scholar -->
+          <a href="https://scholar.google.co.uk/citations?user=plKXDw8AAAAJ&hl=en" target="_blank"
+             class="flex items-center justify-center w-9 h-9 rounded-lg
+            border dark:border-gray-300 border-white/10
+            dark:bg-gray-100 bg-white/5
+            dark:text-gray-600 text-white/60
+            transition-all duration-300
+            hover:border-[#4285F4] hover:text-[#4285F4]
+            hover:bg-[#4285F4]/10
+            hover:shadow-[0_0_16px_rgba(66,133,244,0.35)]">
+            <i class='bx bxs-graduation text-lg'></i>
+          </a>
+
+        </div>
       </div>
       <div class="flex items-center justify-center">
 

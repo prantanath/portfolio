@@ -27,18 +27,31 @@
       </ul>
     </div>
     <div class="hidden md:flex">
-      <ul
-        class="dark:text-black hidden md:flex space-y-4 md:space-y-0 md:space-x-4 font-semibold md:flex-row items-center mt-4 md:mt-0"
-      >
-        <li><a href="#about" class="link">About</a></li>
-        <li><a href="#education" class="link">Education</a></li>
-        <li><a href="#skills" class="link">Skills</a></li>
-        <li><a href="#achievements" class="link">Achievements</a></li>
-        <li><a href="#projects" class="link">Projects</a></li>
-        <li><a href="#research" class="link">Research</a></li>
-        <li class="pl-4 pb-2">
+      <ul class="hidden md:flex space-y-0 md:space-x-1 font-semibold md:flex-row items-center mt-4 md:mt-0">
+
+        <li *ngFor="let item of ['about','education','skills','achievements','projects','research']">
+          <a [href]="'#' + item"
+             class="relative px-4 py-2 rounded-lg text-sm
+              dark:text-gray-600 text-white/70
+             transition-all duration-200 capitalize
+              group overflow-hidden inline-block">
+
+            <!-- animated underline -->
+            <span class="absolute bottom-1 left-4 right-4 h-[1.5px] rounded-full
+                   bg-gradient-to-r from-pink-400 via-fuchsia-400 to-red-500
+                   scale-x-0 group-hover:scale-x-100
+                   transition-transform duration-300 origin-left">
+      </span>
+
+            {{ item }}
+          </a>
+        </li>
+
+        <!-- dark mode toggle -->
+        <li class="pl-3">
           <app-dark-mode/>
         </li>
+
       </ul>
     </div>
 

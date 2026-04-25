@@ -2,7 +2,7 @@ import {project} from "./interfaces";
 
 export const projectsList : project[] = [
   {
-    title: 'GOOGLE CLASSROOM CLONE',
+    title: 'HomeSchool - A CLASSROOM MANAGEMENT APP',
     description: 'The project includes user login, registration by role, creating and joining\n' +
       'classrooms, creating posts and comments, and creating assignment and grading\n' +
       'functions.',

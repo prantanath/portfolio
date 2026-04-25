@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgClass} from "@angular/common";
+import {NgClass, NgForOf} from "@angular/common";
 import {DarkModeComponent} from "../dark-mode/dark-mode.component";
 
 @Component({
@@ -7,7 +7,8 @@ import {DarkModeComponent} from "../dark-mode/dark-mode.component";
   standalone: true,
   imports: [
     NgClass,
-    DarkModeComponent
+    DarkModeComponent,
+    NgForOf
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

@@ -22,7 +22,7 @@ export class AboutComponent {
   }
   about_one = "I am a Developer specializing in dynamic web applications with Angular and Django. I work on creating user centric interfaces that make it more engaging as well as functional.";
 
-  about_two = "My Research takes me into fields like Machine Learning, AI,Software Engineering and Deep Learning. My research aims to push those fields forward and find real world applications.";
+  about_two = "My research investigates the applications of ML and AI in domains such as cybersecurity and healthcare, aiming to advance these fields and deliver impactful real-world solutions";
 
   about_three = "I am currently focused on Growth as a Lifelong Learner and trying to keep up with state-of-the-art. View my work and hit me up if you are down for collaboration/talks.";
 }

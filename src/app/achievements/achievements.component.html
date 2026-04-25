@@ -1,15 +1,38 @@
 <section id="achievements" class="min-h-screen pt-20">
-  <div class="container mx-auto mt-4 text-white">
+  <div class="container mx-auto mt-4">
     <div class="text-4xl md:text-6xl font-bold text-center pb-16">
       <span [class]="gradientColorClass">Awards and Achievements</span>
     </div>
-    <ul class="space-y-6 flex flex-col md:items-center dark:text-black px-6 md:px-10">
-      <li *ngFor="let achievement of achievementList"
-          class="p-2 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105
-          hover:bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:bg-clip-text hover:text-transparent">
-        <div class="text-sm px-1.5 md:px-1 md:text-xl font-semibold mb-2">{{ achievement }}</div>
-      </li>
-    </ul>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-6 md:px-10">
+      <div *ngFor="let achievement of achievementList; let i = index"
+           class="relative
+                  dark:bg-gray-100 bg-white/5
+                  dark:border-gray-200 border-white/10 border
+                  rounded-2xl p-5
+                  transition-all duration-300 hover:-translate-y-1
+                  dark:hover:border-purple-400/60 hover:border-purple-400/40
+                  dark:hover:bg-gray-50 hover:bg-white/10
+                  overflow-hidden group">
+
+        <!-- left accent bar -->
+        <div class="absolute left-0 top-0 h-full w-[3px]
+                    bg-gradient-to-b from-purple-400 to-red-500
+                    opacity-60 rounded-l-2xl"></div>
+
+        <!-- icon -->
+        <div class="w-9 h-9 rounded-xl
+                    dark:bg-gradient-to-br dark:from-yellow-400/30 dark:to-pink-500/30
+                    bg-gradient-to-br from-yellow-400/20 to-pink-500/20
+                    flex items-center justify-center mb-3 text-base">
+          {{ achievement.icon }}
+        </div>
+
+        <!-- text -->
+        <p class="text-sm font-semibold dark:text-gray-700 text-white/85 leading-snug pl-1">
+          {{ achievement.text }}
+        </p>
+
+      </div>
+    </div>
   </div>
 </section>
-

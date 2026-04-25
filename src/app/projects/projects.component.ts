@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgClass, NgForOf} from "@angular/common";
+import {DecimalPipe, NgClass, NgForOf} from "@angular/common";
 import {projectsList} from "../../data/projects";
 
 @Component({
@@ -7,7 +7,8 @@ import {projectsList} from "../../data/projects";
   standalone: true,
   imports: [
     NgForOf,
-    NgClass
+    NgClass,
+    DecimalPipe
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
